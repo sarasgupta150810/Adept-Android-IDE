@@ -9,16 +9,24 @@
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #090D18; /* Matches your adaptive icon background */
+            background-color: #090D18;
             color: #ffffff;
             text-align: center;
         }
         .hero {
-            padding: 100px 20px;
+            padding: 80px 20px 100px 20px;
             background: linear-gradient(135deg, #090D18 0%, #1a1025 100%);
+        }
+        .app-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
         }
         h1 {
             font-size: 3.5rem;
+            margin-top: 0;
             margin-bottom: 10px;
             background: -webkit-linear-gradient(#00f2fe, #4facfe);
             -webkit-background-clip: text;
@@ -45,6 +53,13 @@
         }
         .download-btn:hover {
             transform: scale(1.05);
+        }
+        .app-preview {
+            max-width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-top: 50px;
+            border: 1px solid #1f2937;
         }
         .features {
             display: flex;
@@ -78,9 +93,14 @@
 <body>
 
     <div class="hero">
+        <img src="logo.png" alt="Adept IDE Logo" class="app-logo">
+        
         <h1>Adept IDE</h1>
         <p class="subtitle">A sleek, high-performance Android development environment engineered for mobile. Write, edit, and compile Kotlin and XML directly on your device without cloud servers.</p>
+        
         <a href="https://github.com/sarasgupta150810/Adept-Android-IDE/releases/latest" class="download-btn">Download APK</a>
+        
+        <img src="app-preview.jpeg" alt="Adept IDE Interface" class="app-preview">
     </div>
 
     <div class="features">
