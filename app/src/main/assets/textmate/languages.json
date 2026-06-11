@@ -1,0 +1,24 @@
+{
+"languages": [
+{
+"name": "java",
+"scopeName": "source.java",
+"grammar": "textmate/java.tmLanguage.json"
+},
+{
+"name": "groovy",
+"scopeName": "source.groovy",
+"grammar": "textmate/groovy.tmLanguage.json"
+},
+{
+"name": "kotlin",
+"scopeName": "source.kotlin",
+"grammar": "textmate/kotlin.tmLanguage.json"
+},
+{
+"name": "xml",
+"scopeName": "text.xml",
+"grammar": "textmate/xml.tmLanguage.json"
+}
+]
+}

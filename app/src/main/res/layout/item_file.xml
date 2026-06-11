@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/rootLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center_vertical"
+android:paddingVertical="6dp"
+android:paddingEnd="8dp"
+android:background="?android:attr/selectableItemBackground">
+
+<Space
+android:id="@+id/indentSpacer"
+android:layout_width="0dp"
+android:layout_height="match_parent" />
+
+<ImageView
+android:id="@+id/imgFileIcon"
+android:layout_width="16dp"
+android:layout_height="16dp"
+android:layout_marginEnd="8dp"
+android:src="@drawable/ic_menu_myfiles"
+android:contentDescription="File Icon"
+app:tint="#D4D4D4" />
+
+<TextView
+android:id="@+id/txtFileName"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="filename.kt"
+android:textColor="#D4D4D4"
+android:textSize="12sp"
+android:singleLine="true" />
+
+</LinearLayout>

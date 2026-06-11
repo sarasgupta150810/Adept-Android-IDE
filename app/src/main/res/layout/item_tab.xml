@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center_vertical"
+android:paddingHorizontal="14dp"
+android:paddingVertical="10dp"
+android:background="#2D2D2D"
+android:layout_marginEnd="2dp">
+
+<TextView
+android:id="@+id/txtTabName"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="MainActivity.kt"
+android:textColor="#ABB2BF"
+android:textSize="12sp"
+android:layout_marginEnd="10dp" />
+
+<ImageView
+android:id="@+id/btnTabClose"
+android:layout_width="14dp"
+android:layout_height="14dp"
+android:src="@android:drawable/ic_menu_close_clear_cancel"
+app:tint="#858585"
+xmlns:app="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

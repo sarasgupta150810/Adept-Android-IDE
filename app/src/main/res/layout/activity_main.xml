@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#1E1E1E">
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="48dp"
+android:background="#252526"
+android:paddingHorizontal="16dp">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_centerVertical="true"
+android:text="ADEPT NATIVE IDE"
+android:textColor="#56B6C2"
+android:textSize="14sp"
+android:textStyle="bold" />
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentEnd="true"
+android:layout_centerVertical="true"
+android:orientation="horizontal">
+
+<Button
+android:id="@+id/btnSync"
+android:layout_width="wrap_content"
+android:layout_height="32dp"
+android:layout_marginEnd="8dp"
+android:backgroundTint="#333333"
+android:text="🔄 SYNC"
+android:textColor="#ABB2BF"
+android:textSize="10sp" />
+
+<Button
+android:id="@+id/btnBuild"
+android:layout_width="wrap_content"
+android:layout_height="32dp"
+android:backgroundTint="#333333"
+android:text="▶ BUILD Apk"
+android:textColor="#ABB2BF"
+android:textSize="10sp" />
+</LinearLayout>
+<ProgressBar
+android:id="@+id/progressBar"
+style="?android:attr/progressBarStyleHorizontal"
+android:layout_width="match_parent"
+android:layout_height="3dp"
+android:layout_alignParentBottom="true"
+android:indeterminate="true"
+android:indeterminateTint="#56B6C2"
+android:visibility="gone" />
+
+</RelativeLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal"
+android:baselineAligned="false">
+
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="match_parent"
+android:layout_weight="0.25"
+android:background="#252526"
+android:orientation="vertical">
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="12dp"
+android:text="Project Explorer"
+android:textColor="#ABB2BF"
+android:textSize="12sp" />
+
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/rvFileExplorer"
+android:layout_width="match_parent"
+android:layout_height="match_parent" />
+</LinearLayout>
+
+<View
+android:layout_width="1dp"
+android:layout_height="match_parent"
+android:background="#333333" />
+
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="match_parent"
+android:layout_weight="0.75"
+android:orientation="vertical">
+
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/rvTabs"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#252526"
+android:orientation="horizontal" />
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="#333333" />
+
+<io.github.rosemoe.sora.widget.CodeEditor
+android:id="@+id/editorView"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="0.7"
+android:background="#1E1E1E" />
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="#333333" />
+
+<HorizontalScrollView
+android:id="@+id/symbolScrollView"
+android:layout_width="match_parent"
+android:layout_height="48dp"
+android:background="#151B2B"
+android:scrollbars="none">
+
+<LinearLayout
+android:id="@+id/symbolLayout"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:orientation="horizontal"
+android:gravity="center_vertical"
+android:paddingHorizontal="8dp" />
+</HorizontalScrollView>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="0.3"
+android:background="#252526"
+android:orientation="vertical">
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingHorizontal="12dp"
+android:paddingTop="8dp"
+android:paddingBottom="4dp"
+android:text="Build Pipeline &amp; Performance Monitor"
+android:textColor="#858585"
+android:textSize="12sp" />
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TextView
+android:id="@+id/consoleOutput"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="12dp"
+android:textColor="#ABB2BF"
+android:textSize="12sp"
+android:fontFamily="monospace"/>
+</ScrollView>
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

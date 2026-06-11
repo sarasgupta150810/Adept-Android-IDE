@@ -1,0 +1,74 @@
+{
+"$schema": "https://githubusercontent.com",
+"name": "XML",
+"scopeName": "text.xml",
+"patterns": [
+{ "include": "#comments" },
+{ "include": "#cdata" },
+{ "include": "#prolog" },
+{ "include": "#doctype" },
+{ "include": "#tags" }
+],
+"repository": {
+"comments": {
+"begin": "<!--",
+"beginCaptures": { "0": { "name": "punctuation.definition.comment.xml" } },
+"end": "-->",
+"endCaptures": { "0": { "name": "punctuation.definition.comment.xml" } },
+"name": "comment.block.xml"
+},
+"cdata": {
+"begin": "<!\\[CDATA\\[",
+"beginCaptures": { "0": { "name": "punctuation.definition.keyword.xml" } },
+"end": "\\]\\]>",
+"endCaptures": { "0": { "name": "punctuation.definition.keyword.xml" } },
+"name": "markup.raw.cdata.xml"
+},
+"prolog": {
+"begin": "<\\?",
+"beginCaptures": { "0": { "name": "punctuation.definition.tag.xml" } },
+"end": "\\?>",
+"endCaptures": { "0": { "name": "punctuation.definition.tag.xml" } },
+"name": "meta.tag.preprocessor.xml",
+"patterns": [{ "include": "#attributes" }]
+},
+"doctype": {
+"begin": "<!(DOCTYPE|doctype)",
+"beginCaptures": { "0": { "name": "keyword.other.doctype.xml" } },
+"end": ">",
+"endCaptures": { "0": { "name": "punctuation.definition.tag.xml" } },
+"name": "meta.tag.sgml.doctype.xml"
+},
+"tags": {
+"begin": "()",
+"endCaptures": { "1": { "name": "punctuation.definition.tag.xml" } },
+"name": "meta.tag.xml",
+"patterns": [{ "include": "#attributes" }]
+},
+"attributes": {
+"patterns": [
+{
+"match": "(?:([-_a-zA-Z0-9]+):)?([-_a-zA-Z0-9]+)\\s*=",
+"captures": {
+"1": { "name": "entity.other.attribute-name.namespace.xml" },
+"2": { "name": "entity.other.attribute-name.localname.xml" }
+}
+},
+{
+"begin": "\"",
+"beginCaptures": { "0": { "name": "punctuation.definition.string.begin.xml" } },
+"end": "\"",
+"endCaptures": { "0": { "name": "punctuation.definition.string.end.xml" } },
+"name": "string.quoted.double.xml"
+},
+{
+"begin": "'",
+"beginCaptures": { "0": { "name": "punctuation.definition.string.begin.xml" } },
+"end": "'",
+"endCaptures": { "0": { "name": "punctuation.definition.string.end.xml" } },
+"name": "string.quoted.single.xml"
+}
+]
+}
+}
+}

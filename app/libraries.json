@@ -1,0 +1,60 @@
+[
+  {
+    "artifactId": "kotlin-stdlib",
+    "excludes": [],
+    "groupId": "org.jetbrains.kotlin",
+    "scope": "compile",
+    "versionName": "1.5.21"
+  },
+  {
+    "artifactId": "appcompat",
+    "excludes": [],
+    "groupId": "androidx.appcompat",
+    "scope": "compile",
+    "versionName": "1.3.1"
+  },
+  {
+    "artifactId": "material",
+    "excludes": [],
+    "groupId": "com.google.android.material",
+    "scope": "compile",
+    "versionName": "1.4.0"
+  },
+  {
+    "artifactId": "constraintlayout",
+    "excludes": [],
+    "groupId": "androidx.constraintlayout",
+    "scope": "compile",
+    "versionName": "2.1.0"
+  },
+  {
+    "artifactId": "editor",
+    "excludes": [],
+    "groupId": "io.github.Rosemoe.sora-editor",
+    "versionName": "0.18.0"
+  },
+  {
+    "artifactId": "language-java",
+    "excludes": [],
+    "groupId": "io.github.Rosemoe.sora-editor",
+    "versionName": "0.18.0"
+  },
+  {
+    "artifactId": "core-ktx",
+    "excludes": [],
+    "groupId": "androidx.core",
+    "versionName": "1.7.0"
+  },
+  {
+    "artifactId": "language-textmate",
+    "excludes": [],
+    "groupId": "io.github.Rosemoe.sora-editor",
+    "versionName": "0.18.0"
+  },
+  {
+    "artifactId": "kotlinx-coroutines-android",
+    "excludes": [],
+    "groupId": "org.jetbrains.kotlinx",
+    "versionName": "1.6.4"
+  }
+]
